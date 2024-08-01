@@ -39,7 +39,7 @@
 По утверждению~\ref{claim::DualitySpaces} о двойственности на подпространствах, нам достаточно доказать равенство $\ker \varphi = (\Im \varphi^*)^\bot$.
 Распишем правую часть равенства
 \[
-(\Im \varphi^*)^\bot = \{v\in V \mid \langle \varphi^*(\xi), v\rangle,\;\xi\in U^*\} = \{v\in V \mid \langle \xi\circ \varphi , v\rangle,\;\xi\in U^*\} = \{v\in V \mid \xi (\varphi (v)),\;\xi\in U^*\}
+(\Im \varphi^*)^\bot = \{v\in V \mid \langle \varphi^*(\xi), v\rangle = 0,\;\xi\in U^*\} = \{v\in V \mid \langle \xi\circ \varphi , v\rangle = 0,\;\xi\in U^*\} = \{v\in V \mid \xi (\varphi (v)) = 0,\;\xi\in U^*\}
 \]
 То есть для любой функции $\xi\in U^*$ и любого вектора $v\in V$ выполнено $\xi(\varphi(v)) = 0$.
 Но утверждение~\ref{claim::VecPointwiseEq} говорит, что если бы вектор $\varphi(v)$ был не нулевым, то такое было бы просто не возможно.
@@ -47,7 +47,7 @@
 С другой стороны, если $\varphi(v) = 0$, то очевидно, что $\xi(\varphi(v)) = 0$ для любого $\xi\in U^*$.
 Таким образом мы проверили, что
 \[
-(\Im \varphi^*)^\bot =  \{v\in V \mid \varphi (v)\} = \ker\varphi
+(\Im \varphi^*)^\bot =  \{v\in V \mid \varphi (v) = 0\} = \ker\varphi
 \]
 Что и требовалось.
 \end{proof}
